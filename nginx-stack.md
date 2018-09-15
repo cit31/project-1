@@ -66,7 +66,7 @@ Service Start:
 $ /home/studentapp/apache-tomcat-9.0.12/bin/startup.sh
 ```
 
-### Install Tomcat and Configure.
+### Install Nginx and Configure.
 
 Installation:
 
