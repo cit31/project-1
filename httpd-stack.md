@@ -49,7 +49,7 @@ $ wget https://github.com/cit31/project-1/raw/master/mysql-connector-java-5.1.40
 
 Configuration:
 
-Update `context.xml` file in the following way.
+Update `context.xml` file in the following way. Just add the following content just before last line.
 
 ```
 <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
