@@ -26,6 +26,16 @@ stop() {
     exit 
   fi 
   su - studentapp -c "nohup $SHUTDOWN"
+  SLEEP=5
+  while [ $SLEEP -lt 60 ]; do 
+    sleep 5
+    ps -ef | grep java | grep $TOMCAT_DIR | grep -v grep    &>/dev/null    
+    if [ $? -ne 0 ]; then 
+      break
+    fi
+    SLEEP=$(($SLEEP+5)) 
+
+  done
 }
 
 
