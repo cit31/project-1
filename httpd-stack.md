@@ -38,6 +38,7 @@ flush privileges;
 Installation:
 
 ```
+# yum install java -y
 # useradd studentapp
 # su - studentapp
 $ wget -qO- http://mirrors.fibergrid.in/apache/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.tar.gz | tar -xf
